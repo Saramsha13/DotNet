@@ -9,7 +9,7 @@ namespace ConsoleApp1
 {
     class Calculator
     {
-        public void calc()
+        public void calcIf()
         {
 
             Console.Write("Enter Num 1: ");
@@ -33,26 +33,44 @@ namespace ConsoleApp1
             else
                 Console.WriteLine("Enter a valid op");
 
-            //switch (op)
-            //{
-            //    case "+":
-            //        result = num1 + num2;
-            //        break;
-            //    case "-":
-            //        result = num1 - num2;
-            //        break;
-            //    case "*":
-            //        result = num1 * num2;
-            //        break;
-            //    case "/":
-            //        result = num1 / num2;
-            //        break;
-            //    default:
-            //        Console.WriteLine("Enter a valid op");
-            //        break;
-            //}
+            Console.WriteLine(num1 + " " + op + " " + num2 + " = " + result);
+
+        }
+
+        public void calcSwitch()
+        {
+            Console.Write("Enter Num 1: ");
+            int num1 = Convert.ToInt32(Console.ReadLine());
+
+            Console.Write("Enter Num 2: ");
+            int num2 = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Choose +, -, *, /");
+            string op = Console.ReadLine();
+
+            int result = 0;
+            switch (op)
+            {
+                case "+":
+                    result = num1 + num2;
+                    break;
+                case "-":
+                    result = num1 - num2;
+                    break;
+                case "*":
+                    result = num1 * num2;
+                    break;
+                case "/":
+                    result = num1 / num2;
+                    break;
+                default:
+                    Console.WriteLine("Enter a valid op");
+                    break;
+            }
 
             Console.WriteLine(num1 + " " + op + " " + num2 + " = " + result);
+
+        }
         }
     }
 }
