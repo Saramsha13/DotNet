@@ -71,6 +71,6 @@ namespace ConsoleApp1
             Console.WriteLine(num1 + " " + op + " " + num2 + " = " + result);
 
         }
-        }
+        
     }
 }

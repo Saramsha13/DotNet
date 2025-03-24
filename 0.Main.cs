@@ -5,10 +5,9 @@ internal class Program
 {
     private static void Main(string[] args)
     {
-        Pattern task1 = new Pattern();
-        task1.create();
-
-
+        Lists test1 = new Lists();
+        test1.addStudents();
+        test1.showStudents();
 
     }
 }
