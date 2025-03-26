@@ -5,7 +5,7 @@ internal class Program
 {
     private static void Main(string[] args)
     {
-        Lists test1 = new Lists();
+        Dick test1 = new Dick();
         test1.addStudents();
         test1.showStudents();
 
